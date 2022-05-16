@@ -1,0 +1,32 @@
+<div class="container">
+  <form class="reactive-form">
+    <div class="input-wrapper">
+      * Name
+      <input class="form-input" [formControl]="nameControl" />
+      <div class="showError" *ngIf="this.user.userName.nameError">
+        {{ this.user.userName.nameError }}
+      </div>
+    </div>
+    <div class="input-wrapper">
+      * Age
+      <input class="form-input" [formControl]="ageControl" />
+      <div class="showError" *ngIf="this.user.userAge.ageError">
+        {{ this.user.userAge.ageError }}
+      </div>
+    </div>
+    <div class="input-wrapper">
+      * Email
+      <input class="form-input" [formControl]="emailControl" />
+      <div class="showError" *ngIf="this.user.userEmail.emailError">
+        {{ this.user.userEmail.emailError }}
+      </div>
+    </div>
+    <button class="form-btn" (click)="checkForm()">Add User</button>
+  </form>
+
+  <ul class="users-list" *ngFor="let user of users">
+    <li>Name:{{ user.userName }}</li>
+    <li>Age:{{ user.userAge }}</li>
+    <li>Email:{{ user.userEmail }}</li>
+  </ul>
+</div>

@@ -1,0 +1,80 @@
+.reactive-form {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.showError {
+  position: absolute;
+  margin-top: 60px;
+  color: red;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  margin: 0 36.5%;
+  margin-bottom: 30px;
+}
+
+.form-input {
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #bdbdbd;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-input:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #bdbdbd;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+
+.form-btn {
+  background: #1877f2;
+  margin-top: 10px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-clip: padding-box;
+  border: 1px solid #bdbdbd;
+  color: white;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin-top: 30px;
+  width: 295px;
+  margin: 0 36.5%;
+}
+.form-btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.users-list {
+  list-style-type: none;
+  padding: 0;
+  padding: 10px;
+  border: 1px solid #1877f2;
+  border-radius: 5px;
+  list-style: none;
+  display: flex;
+  padding-left: -20px;
+  flex-direction: column;
+  width: 295px;
+  margin: 0 36.5%;
+  margin-bottom: 10px;
+}
